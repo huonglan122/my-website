@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ Sưu Tập Ảnh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Liên kết Chuyển đến nội dung chính -->
+    <a href="#main-content" class="skip-link">Chuyển đến nội dung chính</a>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="gallery.html">Bộ Sưu Tập</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <h1>Bộ Sưu Tập Hình Ảnh (6 Ảnh)</h1>
+        <p style="text-align: center; margin-bottom: 20px;">Trang này sử dụng bộ chọn <code>:nth-child</code> để tạo kiểu góc bo viền khác nhau cho các ảnh chẵn và lẻ.</p>
+
+        <!-- Lưới ảnh chứa 6 hình ảnh (thỏa mãn điều kiện từ 5 ảnh trở lên) -->
+        <div class="grid-container gallery-grid">
+            <img src="https://picsum.photos/id/1039/600/400" alt="Thác nước tự nhiên">
+            <img src="https://picsum.photos/id/1043/600/400" alt="Bờ biển hoàng hôn">
+            <img src="https://picsum.photos/id/1047/600/400" alt="Con đường trong rừng">
+            <img src="https://picsum.photos/id/1050/600/400" alt="Cánh đồng hoa tươi">
+            <img src="https://picsum.photos/id/1053/600/400" alt="Bầu trời đêm nhiều sao">
+            <img src="https://picsum.photos/id/1069/600/400" alt="Sương mù trên đại ngàn">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dự án Thiết kế Web CSS3. Bảo lưu mọi quyền.</p>
+    </footer>
+
+</body>
+</html>
