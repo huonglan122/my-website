@@ -102,14 +102,28 @@ img:hover {
 }
 
 /* ==========================================
-   6. BỘ CHỌN NTH-CHILD
+   6. THẺ & BỘ CHỌN NTH-CHILD TRONG GALLERY
    ========================================== */
-.gallery-grid img:nth-child(even) {
+.gallery-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.gallery-card h3 {
+    color: #d35400;
+    margin-top: 12px;
+    font-size: 1.1rem;
+}
+
+.gallery-grid .gallery-card:nth-child(even) img {
     border-radius: 35px 8px 35px 8px;
     border-color: #e67e22;
 }
 
-.gallery-grid img:nth-child(odd) {
+.gallery-grid .gallery-card:nth-child(odd) img {
     border-radius: 8px 35px 8px 35px;
     border-color: #27ae60;
 }
