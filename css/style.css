@@ -10,19 +10,18 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #fdfaf6; /* Tông màu kem ấm cúng */
+    background-color: #fdfaf6;
     color: #2c3e50;
 }
 
 /* ==========================================
    2. SKIP TO MAIN CONTENT LINK
-   (Dùng position & :focus - Chỉ hiển thị khi focus)
    ========================================== */
 .skip-link {
     position: absolute;
     top: -50px;
     left: 10px;
-    background: #d35400; /* Màu cam đậm */
+    background: #d35400;
     color: white;
     padding: 10px 15px;
     text-decoration: none;
@@ -38,35 +37,34 @@ body {
 }
 
 /* ==========================================
-   3. NAVIGATION (Dùng Flexbox & >3 thuộc tính CSS)
+   3. NAVIGATION (Flexbox)
    ========================================== */
 header {
-    background-color: #e67e22; /* Màu cam ấm thực */
+    background-color: #e67e22;
     padding: 12px 20px;
 }
 
 nav ul {
-    display: flex; /* Yêu cầu Flexbox */
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    list-style-type: none; /* Thuộc tính 1 */
+    list-style-type: none;
 }
 
 nav a {
-    color: #ffffff; /* Thuộc tính 2 */
-    text-decoration: none; /* Thuộc tính 3 */
-    font-size: 1.1rem; /* Thuộc tính 4 */
-    padding: 8px 18px; /* Thuộc tính 5 */
-    border-radius: 20px; /* Thuộc tính 6 */
-    background-color: #c0392b; /* Thuộc tính 7 - Đỏ truyền thống */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background-color: #c0392b;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Hiệu ứng :hover cho Menu điều hướng */
 nav a:hover {
-    background-color: #27ae60; /* Đổi sang màu xanh lá lá chuối/cốm */
+    background-color: #27ae60;
     color: #ffffff;
 }
 
@@ -74,8 +72,8 @@ nav a:hover {
    4. BỐ CỤC GRID
    ========================================== */
 .grid-container {
-    display: grid; /* Yêu cầu CSS Grid */
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Tự động từ 2-3 cột */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
     padding: 20px;
     max-width: 1200px;
@@ -83,24 +81,20 @@ nav a:hover {
 }
 
 /* ==========================================
-   5. BỐ CỤC HỘP (BOX MODEL) & HIỆU ỨNG HÌNH ẢNH
+   5. BOX MODEL & HÌNH ẢNH
    ========================================== */
 img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    
-    /* Áp dụng mô hình hộp (Box Model) */
-    border: 5px solid #ffffff; /* Border */
-    padding: 6px;              /* Padding */
-    border-radius: 15px;       /* Border-radius */
+    border: 5px solid #ffffff;
+    padding: 6px;
+    border-radius: 15px;
     background-color: #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    
     transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
-/* Hiệu ứng :hover cho hình ảnh */
 img:hover {
     transform: scale(1.04) rotate(1deg);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -110,20 +104,18 @@ img:hover {
 /* ==========================================
    6. BỘ CHỌN NTH-CHILD
    ========================================== */
-/* Các hình ảnh vị trí CHẮN trong Gallery */
 .gallery-grid img:nth-child(even) {
     border-radius: 35px 8px 35px 8px;
     border-color: #e67e22;
 }
 
-/* Các hình ảnh vị trí LẺ trong Gallery */
 .gallery-grid img:nth-child(odd) {
     border-radius: 8px 35px 8px 35px;
     border-color: #27ae60;
 }
 
 /* ==========================================
-   7. CHUNG CHO CÁC TRANG
+   7. TRANG TRÍ CHUNG
    ========================================== */
 main {
     padding: 30px 20px;
